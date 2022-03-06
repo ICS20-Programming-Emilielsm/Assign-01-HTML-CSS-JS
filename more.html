@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Marine Biology">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Emilie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+		<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+    
+		<!-- Google's MDL -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Marine Biology</title>
+  </head>
+  <body>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <center><h1> Marine Animals </h1></center>
+      <div style="float: left; width: 100px;"></div>
+    
+    <!-- Review -->
+    <p> Below please write what you think is the best part of the Web page so far</p>
+
+    <!-- Textfield with Floating Label -->
+
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3">
+        <label class="mdl-textfield__label" for="sample3">Write Here</label>
+      </div>
+    </form>
+    <hr></hr>
+    
+    <!-- Inforemation and Link -->
+    <p>There are many marine animals in the ocean. On this web page this is going to list the 3 colloest in the ocean!
+    </p>
+    <hr>
+    <h5> First is the Feather Star</h5>
+    <img src="./images/featherstar.jpeg" alt="Feather Star">
+
+    <!-- Google's MDL -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Fun!</button>
+    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+    (function() {
+      'use strict';
+      var snackbarContainer = document.querySelector('#demo-snackbar-example');
+      var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+      var handler = function(event) {
+        showSnackbarButton.style.backgroundColor = '';
+      };
+      showSnackbarButton.addEventListener('click', function() {
+        'use strict';
+        showSnackbarButton.style.backgroundColor = '#' +
+            Math.floor(Math.random() * 0xFFFFFF).toString(16);
+        var data = {
+          message: 'Button color changed.',
+          timeout: 2000,
+          actionHandler: handler,
+          actionText: 'Undo'
+        };
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+      });
+    }());
+    </script>
+    <br></br>
+    <hr></hr>
+    <h5> Second is the Glaucus Atlanticus</h5>
+    <img src="./images/glaucusatlanticus.jpeg" alt="Glaucus Atlanticus">
+    <p> The Glaucus Atlanticus also know as the Blue Dragon is a type of stining sea slug. They don't really float they just float upside down on the surface over the waves. </p>
+    <!-- Google's MDL -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised" type="button">Show Snackbar</button>
+    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+    (function() {
+      'use strict';
+      var snackbarContainer = document.querySelector('#demo-snackbar-example');
+      var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+      var handler = function(event) {
+        showSnackbarButton.style.backgroundColor = '';
+      };
+      showSnackbarButton.addEventListener('click', function() {
+        'use strict';
+        showSnackbarButton.style.backgroundColor = '#' +
+            Math.floor(Math.random() * 0xFFFFFF).toString(16);
+        var data = {
+          message: 'Button color changed.',
+          timeout: 2000,
+          actionHandler: handler,
+          actionText: 'Undo'
+        };
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+      });
+    }());
+    </script>
+    <hr>
+    <p>Lastly, You dont have to become a marine biologist and work with animals hands on. There are many different careers in Marine Biology like Marine Mammal Trainer, Marine Researcher, Marine Environment Educator/ Oceanography and many others that can be found in the menu!</p>
+    
+    <p>
+      Here is the <a href="./more.html">link </a> to my second.
+    </p>
+    <hr>
+    <p>Slide the slider to indicate how intrested you are so far!</p>
+    <!-- Google's MDL -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Default Slider -->
+    <input class="mdl-slider mdl-js-slider" type="range"
+    min="0" max="100" value="0" tabindex="0">
+    </space>
+    <hr>
+    <!-- Google's MDL -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+      function myButtonClicked() {
+        alert("Hope you like the Web page and it's contents")
+      }
+    </script>
+  
+		<!-- Colored raised button -->
+		<button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+		  Click Me!
+		</button>
+    <hr></hr>
+    <!-- Images -->
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    <div class="row">
+      <div class="column">
+        <img src="./images/marine.jpeg" alt="Marine" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="./images/marine2.jpeg" alt="Forest" style="width:100%">
+      </div>
+    
+  </body>
+</html>
