@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+    .  demo-layout-transparent {
+      background: url('../assets/demos/transparent.jpg') center / cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {    
+      color: black;
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="description" content="Marine Biology">
     <meta name="keywords" content="immaculata, ics2o">
@@ -22,19 +32,9 @@
   <body>
 		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <center><h1>Marine biology</h1></center>
-      <div style="float: left; width: 100px;"></div>
+    <div style="float: left; width: 100px;"></div>
     
-    <!-- Uses a transparent header that draws on top of the layout's background -->
-      <style>
-    .  demo-layout-transparent {
-      background: url('../assets/demos/transparent.jpg') center / cover;
-    }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
-    
-      color: black;
-    }
-    </style>
+
     
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <header class="mdl-layout__header mdl-layout__header--transparent">
@@ -43,10 +43,10 @@
           <!-- Title -->
           <span class="mdl-layout-title"></span>
           <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer">
-          </div>
+          <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
-          <nav class="mdl-navigation"> <a class="mdl-navigation__link"href="https://www.marinebio.org/creatures/marine-biology/history-of-marine-biology/#:~:text=The%20modern%20day%20study%20of,uncharted%20waters%20during%20that%20time.">History of Marine Biology</a>
+          <nav class="mdl-navigation"> 
+            <a class="mdl-navigation__link"href="https://www.marinebio.org/creatures/marine-biology/history-of-marine-biology/#:~:text=The%20modern%20day%20study%20of,uncharted%20waters%20during%20that%20time.">History of Marine Biology</a>
             <a class="mdl-navigation__link" href="https://education.seattlepi.com/high-school-classes-required-marine-biology-1567.html">High School Courses</a>
             <a class="mdl-navigation__link" href="https://www.marineinsight.com/careers-2/a-list-of-unique-and-interesting-marine-careers/">Marine Careers</a>
           </nav>
@@ -60,11 +60,10 @@
           <a class="mdl-navigation__link" href="https://www.marineinsight.com/careers-2/a-list-of-unique-and-interesting-marine-careers/">Marine Careers</a>
         </nav>
       </div>
-      <main class="mdl-layout__content">
-      </main>
+      <main class="mdl-layout__content"></main>
     </div>
-		<br></br>
-    <br></br>
+		<br>
+    <br>
     <!-- Inforemation and Link -->
     <p>Brief History on the beginning of Marine Biology:"The modern day study of marine biology began with the exploration by Captain James Cook (1728-1779) in 18th century Britain. Captain Cook is most known for his extensive voyages of discovery for the British Navy, mapping much of the world’s uncharted waters during that time."-marinebio.org.
       More details can be found in the bar up top!
@@ -76,7 +75,7 @@
     <p>Lastly, You dont have to become a marine biologist and work with animals hands on. There are many different careers in Marine Biology like Marine Mammal Trainer, Marine Researcher, Marine Environment Educator/ Oceanography and many others that can be found in the menu!</p>
     
       <p>
-      Here is the link to my <a herf="./more.html">link</a>
+      Here is the link to my <a href="./more.html">link</a> to my second page 
       </p>
     <hr>
     <p>Slide the slider to indicate how intrested you are so far!</p>
