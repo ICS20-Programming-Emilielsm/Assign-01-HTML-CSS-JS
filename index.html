@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Uses a transparent header that draws on top of the layout's background -->
-    <style>
-    .  demo-layout-transparent {
-      background: url('../assets/demos/transparent.jpg') center / cover;
-    }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {    
-      color: black;
-    }
-    </style>
     <meta charset="utf-8">
     <meta name="description" content="Marine Biology">
     <meta name="keywords" content="immaculata, ics2o">
     <meta name="author" content="Emilie">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+      .  demo-layout-transparent {
+        background: url('../assets/demos/transparent.jpg') center / cover;
+      }
+      .demo-layout-transparent .mdl-layout__header,
+      .demo-layout-transparent .mdl-layout__drawer-button {    
+        color: black;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
     
 		<!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
@@ -29,42 +46,56 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Marine Biology</title>
   </head>
+  
   <body>
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+      function myButtonClicked() {
+        alert("Hope you like the Web page and it's contents")
+      }
+    </script>
     <center><h1>Marine biology</h1></center>
     <div style="float: left; width: 100px;"></div>
-    
 
     
     <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
+
+    <!-- Colored raised button -->
+		<button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+		  Click Me!
+		</button>
           
           <!-- Title -->
           <span class="mdl-layout-title"></span>
           <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-layout-spacer"></div>          
           <!-- Navigation -->
           <nav class="mdl-navigation"> 
-            <a class="mdl-navigation__link"href="https://www.marinebio.org/creatures/marine-biology/history-of-marine-biology/#:~:text=The%20modern%20day%20study%20of,uncharted%20waters%20during%20that%20time.">History of Marine Biology</a>
-            <a class="mdl-navigation__link" href="https://education.seattlepi.com/high-school-classes-required-marine-biology-1567.html">High School Courses</a>
-            <a class="mdl-navigation__link" href="https://www.marineinsight.com/careers-2/a-list-of-unique-and-interesting-marine-careers/">Marine Careers</a>
+            <a class="mdl-navigation__link" href="https://www.marinebio.org/creatures/marine-biology/history-of-marine-biology/#:~:text=The%20modern%20day%20study%20of,uncharted%20waters%20during%20that%20time.">History of Marine Biology</a>
+            <a class="mdl-navigation__link" href="https://ca.indeed.com/career-advice/finding-a-job/how-to-become-a-marine-biologist#:~:text=Complete%20your%20high%20school%20studies,computer%20science%20in%20high%20school.">High School Courses</a>
+            <a class="mdl-navigation__link" href="https://ca.indeed.com/career-advice/finding-a-job/jobs-in-marine-biology">Marine Careers</a>
           </nav>
         </div>
       </header>
+       
       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">Links to more info</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="https://www.marinebio.org/creatures/marine-biology/history-of-marine-biology/#:~:text=The%20modern%20day%20study%20of,uncharted%20waters%20during%20that%20time.">History of Marine Biology</a>
-          <a class="mdl-navigation__link" href="https://education.seattlepi.com/high-school-classes-required-marine-biology-1567.html">High School Courses</a>
-          <a class="mdl-navigation__link" href="https://www.marineinsight.com/careers-2/a-list-of-unique-and-interesting-marine-careers/">Marine Careers</a>
+          <a class="mdl-navigation__link"  href="https://www.marinebio.org/creatures/marine-biology/history-of-marine-biology/#:~:text=The%20modern%20day%20study%20of,uncharted%20waters%20during%20that%20time">History of Marine Biology</a>
+          <a class="mdl-navigation__link" href="https://ca.indeed.com/career-advice/finding-a-job/how-to-become-a-marine-biologist#:~:text=Complete%20your%20high%20school%20studies,computer%20science%20in%20high%20school">High School Courses</a>
+          <a class="mdl-navigation__link" href="https://ca.indeed.com/career-advice/finding-a-job/jobs-in-marine-biology">Marine Careers</a>
+          <a class="mdl-navigation__link" <a href="./more.html">Link to my second page</a>
         </nav>
       </div>
       <main class="mdl-layout__content"></main>
     </div>
 		<br>
     <br>
-    <!-- Inforemation and Link -->
+
+    
+    <hr>
+    <!-- Inforemation -->
     <p>Brief History on the beginning of Marine Biology:"The modern day study of marine biology began with the exploration by Captain James Cook (1728-1779) in 18th century Britain. Captain Cook is most known for his extensive voyages of discovery for the British Navy, mapping much of the world’s uncharted waters during that time."-marinebio.org.
       More details can be found in the bar up top!
     </p>
@@ -74,55 +105,19 @@
     <hr>
     <p>Lastly, You dont have to become a marine biologist and work with animals hands on. There are many different careers in Marine Biology like Marine Mammal Trainer, Marine Researcher, Marine Environment Educator/ Oceanography and many others that can be found in the menu!</p>
     
-      <p>
-      Here is the link to my <a href="./more.html">link</a> to my second page 
-      </p>
+
+
     <hr>
     <p>Slide the slider to indicate how intrested you are so far!</p>
-    <!-- Google's MDL -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
+    
     <!-- Default Slider -->
     <input class="mdl-slider mdl-js-slider" type="range"
     min="0" max="100" value="0" tabindex="0">
     </space>
     <hr>
-    <!-- Google's MDL -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script>
-      function myButtonClicked() {
-        alert("Hope you like the Web page and it's contents")
-      }
-    </script>
-  
-		<!-- Colored raised button -->
-		<button onclick="myButtonClicked()" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-		  Click Me!
-		</button>
-    <hr></hr>
+   
     <!-- Images -->
-    <style>
-    * {
-      box-sizing: border-box;
-    }
     
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-    
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-    </style>
     <div class="row">
       <div class="column">
         <img src="./images/marine.jpeg" alt="Marine" style="width:100%">
@@ -131,10 +126,6 @@
         <img src="./images/marine2.jpeg" alt="Forest" style="width:100%">
       </div>
 
-      <!-- Google's MDL -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.pink-deep_purple.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
       <!-- checkbox -->
     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
     <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
