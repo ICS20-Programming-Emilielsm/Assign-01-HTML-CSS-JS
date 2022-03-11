@@ -16,11 +16,8 @@ h1 {
 }
 
 p {
-  background-color: #8A9FBD;
+  background-color: LightCyan;
+  color: #434b56;
   font-family: Lucida Console;
   font-size: 20px;
-}
-
-h6 {
-  
 }

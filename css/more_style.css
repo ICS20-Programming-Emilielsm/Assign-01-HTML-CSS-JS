@@ -9,20 +9,22 @@ body {
 }
 
 h1 {
-  background-color: WhiteSmoke;
+  background-color: Lavender;
   color: hsl(210, 60%, 49%);
   padding: 40xp;
   text-align: center;
 }
 
 p {
-  background-color: #B3C8DE;
+  background-color: LightCyan;
+  color: #24405c;
   font-family: Lucida Console;
   font-size: 20px;
 }
 
 h5 {
-  background-color: #B3C8DE;
+  background-color: LightCyan;
+  color: rgb(67, 95, 102);
   font-family: Lucida Console;
   font-size: 20px;
 }
